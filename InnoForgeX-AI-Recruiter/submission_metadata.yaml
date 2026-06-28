@@ -1,0 +1,41 @@
+team_name: "InnoForgeX"
+primary_contact:
+  name: "Yash"
+  email: "yashborade072@gmail.com"
+  phone: "+91-8793939543"
+
+team_members:
+  - name: "Rushikesh Kunde"
+    email: "rushikeshkunde764@gmail.com"
+    role: "Data Scientist"
+
+github_repo: "https://github.com/YashI2IT/InnoForgeX-AI-Recruiter"
+sandbox_link: "https://huggingface.co/spaces/YashB001/ai-recruiter"
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
+
+compute:
+  platform: "Local Windows Box"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.11.4"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+ai_tools_used:
+  - "Gemini"
+
+ai_usage_summary: |
+  Built entirely with Gemini AI (Antigravity IDE Agent). Generated the heuristic ranking code, logic for honeypot filtering, and behavioral signal modifiers based on the provided dataset and specification.
+
+methodology_summary: |
+  A highly optimized rule-based and lexical hybrid ranker. It first filters honeypots and explicitly disqualified candidates (e.g. consultants without product experience, title-chasers). Then, it scores candidates using TF-IDF similarity between their profiles (summary/career history) and the JD, boosted by specific technical keywords (e.g. embeddings, Pinecone). Finally, it multiplies the base score by a behavioral signal factor to prioritize engaged, responsive candidates.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
